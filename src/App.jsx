@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="calc-container">
-      <h2>Калькулятор</h2>
+      <h2>Калькулятор Б</h2>
       <input 
         type="number" 
         value={num1} 
