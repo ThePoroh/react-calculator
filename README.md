@@ -1,14 +1,16 @@
-# React Calculator
-Простий веб-калькулятор, створений для опанування навичок роботи з Git.
+# React + Vite
 
-## Опис ідеї (MVP)
-Мінімально життєздатний продукт (MVP), який дозволяє виконувати базові арифметичні операції. [cite_start]Проєкт демонструє професійну організацію робочого простору та використання стратегій розгалуження[cite: 274, 276].
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Стек технологій
-* React (Vite)
-* CSS
-* Git
+Currently, two official plugins are available:
 
-## Інструкція з запуску
-1. [cite_start]Встановіть залежності: `npm install`[cite: 267].
-2. [cite_start]Запустіть проєкт: `npm run dev`[cite: 267].
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
