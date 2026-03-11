@@ -18,10 +18,26 @@ function App() {
   const [num2, setNum2] = useState('')
   const [result, setResult] = useState(null)
 
+  const appStatus = import.meta.env.VITE_APP_STATUS;
+
   return (
     <div className="calc-container">
+      {/* ВІДОБРАЖЕННЯ СТАТУСУ (DEV/PROD) */}
+      <div style={{ 
+        fontSize: '12px', 
+        padding: '5px', 
+        borderRadius: '4px',
+        backgroundColor: '#f0f0f0',
+        color: appStatus?.includes('Production') ? 'green' : 'orange',
+        marginBottom: '15px',
+        textAlign: 'center',
+        fontWeight: 'bold'
+      }}>
+        {appStatus || "Режим не визначено"}
+      </div>
+
       <h2>Калькулятор</h2>
-      {/* ПОВЕРТАЄМО ІНПУТИ, ЯКІ ЗНИКЛИ */}
+      
       <input 
         type="number" 
         value={num1} 
@@ -42,9 +58,13 @@ function App() {
         <button onClick={() => setResult(calculate(num1, num2, 'divide'))}>/</button>
       </div>
 
-      {/* ПОВЕРТАЄМО ВІДОБРАЖЕННЯ РЕЗУЛЬТАТУ */}
-      {result !== null && <h3 className="result">Результат: {result}</h3>}
+      {result !== null && (
+        <h3 className="result" style={{ marginTop: '20px' }}>
+          Результат: {result}
+        </h3>
+      )}
     </div>
   )
 }
+
 export default App
