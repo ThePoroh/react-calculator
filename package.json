@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint . --fix",
     "format": "prettier --write \"src/**/*.{js,jsx,json,css}\"",
-    "test:unit": "vitest",
+    "test:unit": "vitest run",
     "test:unit:ui": "vitest-ui",
     "test:unit:coverage": "vitest run --coverage",
     "test:e2e": "playwright test e2e",
