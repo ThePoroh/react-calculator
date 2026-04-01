@@ -3,7 +3,7 @@
 [![CI/CD Pipeline](https://github.com/ThePoroh/react-calculator/actions/workflows/ci-cd.yml/badge.svg?branch=main)](https://github.com/ThePoroh/react-calculator/actions/workflows/ci-cd.yml)
 ![Vercel Deploy](https://img.shields.io/badge/deploy-vercel-black?logo=vercel)
 
-Це навчальний проєкт калькулятора на **React + Vite**, створений у межах Лабораторної роботи №4 з курсу мобільної розробки.
+Це навчальний проєкт калькулятора на **React + Vite**.
 
 ---
 
@@ -25,7 +25,7 @@
 ---
 
 ##  Посилання
-- **Live Demo:** [https://vercel.com/theporohs-projects]
+- **Live Demo:** [https://react-calculator-navy-alpha.vercel.app/]
 - **GitHub Actions:** [Переглянути статус пайплайнів](https://github.com/ThePoroh/react-calculator/actions)
 
 ---
