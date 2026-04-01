@@ -22,19 +22,19 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        [cite_start]run: npm ci # Встановлення бібліотек [cite: 255]
+        run: npm ci
 
       - name: Run linter
-        [cite_start]run: npm run lint # Крок 4: Перевірка стилю коду [cite: 288, 289]
+        run: npm run lint
 
       - name: Run unit tests
-        [cite_start]run: npm run test:unit # Крок 5: Запуск модульних тестів [cite: 318, 319]
+        run: npm run test:unit
 
       - name: Build for production
-        [cite_start]run: npm run build # Збірка артефакту для розгортання [cite: 409]
+        run: npm run build
 
       - name: Upload build artifacts
-        [cite_start]uses: actions/upload-artifact@v4 # Збереження папки dist на GitHub [cite: 220]
+        uses: actions/upload-artifact@v4
         with:
           name: dist
           path: dist/
