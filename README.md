@@ -1,16 +1,37 @@
-# React + Vite
+#  React Calculator - CI/CD Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![CI/CD Pipeline](https://github.com/ThePoroh/react-calculator/actions/workflows/ci-cd.yml/badge.svg?branch=main)](https://github.com/ThePoroh/react-calculator/actions/workflows/ci-cd.yml)
+![Vercel Deploy](https://img.shields.io/badge/deploy-vercel-black?logo=vercel)
 
-Currently, two official plugins are available:
+Це навчальний проєкт калькулятора на **React + Vite**, створений у межах Лабораторної роботи №4 з курсу мобільної розробки.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+##  Опис CI/CD пайплайну (Quality Gate)
+Проєкт налаштований на автоматичну перевірку та розгортання:
+1. **Linting**: Перевірка стилю коду за допомогою ESLint.
+2. **Unit Testing**: Автоматичний запуск 7 тестів логіки калькулятора через **Vitest**.
+3. **Build**: Збірка продуктової версії додатка.
+4. **Artifacts**: Збереження папки `dist` у GitHub Actions.
+5. **Continuous Deployment**: Автоматичне оновлення сайту на **Vercel** після успішного проходження всіх тестів у гілці `main`.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+##  Захист гілки (Branch Protection)
+Для гілки `main` налаштовано **Branch Protection Rule**:
+- Заборонено прямий пуш без проходження статус-чеків.
+- Обов'язкове успішне виконання завдання **Build and Test** для злиття коду.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+##  Посилання
+- **Live Demo:** [https://vercel.com/theporohs-projects]
+- **GitHub Actions:** [Переглянути статус пайплайнів](https://github.com/ThePoroh/react-calculator/actions)
+
+---
+
+## 🛠 Технологічний стек
+- **Frontend:** React 18, Vite
+- **Тестування:** Vitest, jsdom
+- **Автоматизація:** GitHub Actions
+- **Хостинг:** Vercel
