@@ -1,5 +1,4 @@
 import { describe, it, expect } from 'vitest';
-// 1. Імпортуємо функцію з оригінального файлу App.jsx
 import { calculate } from './App'; 
 
 describe('Calculator Business Logic (Unit Tests)', () => {
